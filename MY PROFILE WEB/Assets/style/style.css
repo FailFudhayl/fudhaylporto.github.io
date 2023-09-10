@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    color: #30475e;
+}
+
+html {
+    background-color: #f5f5f5;
+}
+
+header {
+    height: 70px;
+}
+
+header nav ul {
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 24px;
+    font-weight: bold;
+}
+
+header nav ul li a {
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f05454;
+}
+
+.hayl {
+    color: #f05454;
+}
+
+.Nama-kepala {
+    color: #30475e;
+    display: inline-block;
+    float: left;
+    padding: 15px 24px;
+}
+
+header h1 a {
+    color: #30475e;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 19px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+@media screen and (max-width: 926px) {
+    .mobile-menu {
+        display: block;
+    }
+    header nav ul {
+        display: none;
+    }
+    .pendidikan-list {
+		width:50%;
+	}
+	.kontak-list {
+		width:100%;
+	}
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width:300px;
+	background-color: rgba(48, 71, 94, .9);
+	transition: .3s;
+	z-index: 9999;
+}
+.sidebar ul li a {
+	color: #f5f5f5;
+}
+.sidebar ul li {
+	padding:24px;
+	transition: .3s;
+	transition-property: background-color;
+    color: #f5f5f5;
+}
+.sidebar ul li:hover {
+	background-color: #f05454;
+}
+#check:checked ~ .sidebar {
+	left: 0;
+}
+
+.banner {
+    background-color: #30475e;
+    padding: 150px 0;
+}
+
+.banner img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+article {
+    padding: 50px 0;
+}
+
+.banner h2, .banner p, .banner span {
+    color: #f5f5f5;
+}
+
+.banner-left {
+    padding-left: 24px;
+}
+
+.banner h2 {
+    margin-bottom: 10px;
+}
+
+.banner p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.btn {
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-flex;
+    justify-content: center;
+    height: 50px;
+    line-height: 50px;
+    background: #f05454;
+    border-radius: 15px;
+    padding: 0 25px;
+    transition: all 0.3s;
+}
+
+article h3 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin:20px;
+	position: relative;
+}
+
+article h3::before {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width:120px;
+	height:1px;
+	background-color: #f5f5f5;
+	left: calc(50% - 60px);
+}
+
+article h3::after {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width:40px;
+	height:4px;
+	background-color: #f05454;
+	left: calc(50% - 20px);
+}
+
+.p1nya-about {
+    text-align: justify;
+    text-indent: 32px;
+}
+
+.pendidikan-list {
+	width:25%;
+	box-sizing: border-box;
+	padding:5px;
+	float: left;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.pendidikan-list img {
+	width: 100%;
+}
+
+.pendidikan-list a:hover img {
+	transform: scale(1.2);
+}
+
+#skill {
+    background-color: #f9f9f9;
+}
+
+#skill .skill {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
+}
+
+#skill .skill-items {
+	max-width: 400px; 
+	width: 100%;
+}
+
+#skill .skill-item {
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	transition: 0.3s ease box-shadow;
+}
+
+#skill .skill-item:hover {
+	box-shadow: 0px 0px 5px 0 #0000002c;
+}
+
+#skill .icon {
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+#skill .skill-info p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#skill .container {
+    min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.kontak-list {
+	width:33.33%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	padding:50px 10px;
+}
+
+.kontak-list h4 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+}
+
+footer {
+	background-color: #30475e;
+	padding:50px;
+	text-align: center;
+    font-weight: bold;
+}
+
+footer small {
+	color: #f5f5f5;
+}
+
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+
+.card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #30475e;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+.card img {
+	display: block;
+	text-align: center;
+	align-self: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 80px;
+	margin-right: 0;
+	left: calc(50% - 60px);
+	align-items: center;
+}
+
+h5 {
+	color: #f5f5f5;
+	font-size: 23px;
+	margin-bottom: 4px;
+}
+
+.pra ul li {
+	color: #f5f5f5;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+@media only screen and (min-width: 768px) {
+    #skill .skil {
+		flex-direction: column;
+		padding: 100px 0;
+		align-items: center;
+		justify-content: center;
+		min-width: 20vh;
+	}
+	#skil .skil-items {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+	#skil .skil-item {
+		width: 30%;
+		margin: 0;
+		flex-direction: row;
+	}
+	#skil .skil-item .icon {
+		height: 100px;
+		width: 100px;
+	}
+	#skil .skil-item .icon img {
+		object-fit: contain;
+	}
+	#skil .skil-item .skil-info {
+		width: 100%;
+		text-align: left;
+		padding-left: 20px;
+    }
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + .content {
+	padding-top: 60px;
+}
+
+@media (max-width: 768px){
+	.mobile-menu {
+		display: block;
+	}
+	header .container ul {
+		display: none;
+	}
+	.kontak-list {
+		width:100%;
+	}
+}
